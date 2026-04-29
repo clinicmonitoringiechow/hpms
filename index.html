@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>HPMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>HPMS</h1>
+<h2>Health Program Monitoring System</h2>
+
+<div class="form-box">
+
+<input type="date" id="tanggal_register">
+
+<input type="text" id="no_kk" placeholder="No. KK">
+<input type="text" id="nik" placeholder="NIK">
+<input type="text" id="no_rm" placeholder="No. Rekam Medik">
+<input type="text" id="nama" placeholder="Nama">
+
+<input type="text" id="tempat_lahir" placeholder="Tempat Lahir">
+<input type="date" id="tanggal_lahir">
+
+<select id="jk">
+<option>Laki-laki</option>
+<option>Perempuan</option>
+</select>
+
+<input type="text" id="pendidikan" placeholder="Pendidikan Terakhir">
+<input type="text" id="pekerjaan" placeholder="Pekerjaan">
+<input type="text" id="rujukan" placeholder="Asal Rujukan">
+<input type="text" id="alamat" placeholder="Alamat">
+<input type="text" id="hp" placeholder="No HP">
+<input type="email" id="email" placeholder="Email">
+<input type="text" id="bpjs" placeholder="No BPJS">
+<input type="text" id="suku" placeholder="Suku/Kebangsaan">
+
+<input type="text" id="alasan" placeholder="Alasan Pemeriksaan">
+<input type="text" id="layanan" placeholder="Jenis Layanan">
+<input type="text" id="populasi" placeholder="Kelompok Populasi">
+
+<select id="hasil_hiv">
+<option>Negatif</option>
+<option>Positif</option>
+</select>
+
+<select id="hasil_sifilis">
+<option>Negatif</option>
+<option>Positif</option>
+</select>
+
+<select id="hasil_hepatitis">
+<option>Negatif</option>
+<option>Positif</option>
+</select>
+
+<button onclick="tambahData()">Simpan</button>
+
+</div>
+
+<h2>Data Pasien</h2>
+
+<table>
+<thead>
+<tr>
+<th>Nama</th>
+<th>NIK</th>
+<th>Layanan</th>
+<th>HIV</th>
+<th>Sifilis</th>
+<th>Hepatitis</th>
+<th>Aksi</th>
+</tr>
+</thead>
+
+<tbody id="dataPasien"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
